@@ -2,16 +2,14 @@
 // The returned value must be a string, and have "***" between each of its letters.
 // You should not remove or add elements from/to the array.
 
-
 function twoSort(s) {
-    const sorted = s.sort(); // the default sort function works
-    return sorted[0] // take first element
-      .split("") // split string into chars
-      .join("***"); // join chars with ***
+  const sorted = s.sort(); // the default sort function works
+  return sorted[0] // take first element
+    .split("") // split string into chars
+    .join("***"); // join chars with ***
 }
 
-
-// Sample Test 
+// Sample Test
 
 // const chai = require("chai");
 // const assert = chai.assert;
@@ -20,6 +18,6 @@ function twoSort(s) {
 // describe("Basic tests",() =>{
 //   it("Testing for fixed tests", () => {
 //     assert.strictEqual(twoSort(["bitcoin", "take", "over", "the", "world", "maybe", "who", "knows", "perhaps"]), 'b***i***t***c***o***i***n' );
-//     assert.strictEqual(twoSort(["turns", "out", "random", "test", "cases", "are", "easier", "than", "writing", "out", "basic", "ones"]), 'a***r***e'); 
+//     assert.strictEqual(twoSort(["turns", "out", "random", "test", "cases", "are", "easier", "than", "writing", "out", "basic", "ones"]), 'a***r***e');
 //   });
 // });
